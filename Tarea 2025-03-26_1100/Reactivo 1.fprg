@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donas"/>
+        <attribute name="authors" value="juani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-22 11:36:15 p. m."/>
+        <attribute name="created" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDMtMjE7MDg6NDE6NTIgcC4gbS47MzA2NA=="/>
+        <attribute name="edited" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDMtMjI7MTE6MzY6MTUgcC4gbS47MTszMTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Donas" type="Integer" array="False" size=""/>
+            <declare name="PrecioT" type="Integer" array="False" size=""/>
+            <assign variable="PrecioT" expression="10"/>
+            <assign variable="Donas" expression="1"/>
+            <output expression="&quot;&#191;Cuantas donas vas a comprar?&quot;" newline="True"/>
+            <input variable="Donas"/>
+            <if expression="Donas &lt;=29">
+                <then>
+                    <assign variable="PrecioT" expression="Donas*10"/>
+                </then>
+                <else>
+                    <if expression="Donas &lt;=49">
+                        <then>
+                            <assign variable="PrecioT" expression="Donas*9"/>
+                        </then>
+                        <else>
+                            <if expression="Donas &gt;=50">
+                                <then>
+                                    <assign variable="PrecioT" expression="Donas*8"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
