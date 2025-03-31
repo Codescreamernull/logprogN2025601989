@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo2"/>
+        <attribute name="authors" value="juani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-30 06:07:49 p. m."/>
+        <attribute name="created" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDMtMzA7MDI6Mzk6MjAgcC4gbS47MzA2MA=="/>
+        <attribute name="edited" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDMtMzA7MDY6MDc6NDkgcC4gbS47MTszMTc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edadC" type="Integer" array="False" size=""/>
+            <declare name="precioE" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;Que edad tienes?&quot;" newline="True"/>
+            <input variable="edadC"/>
+            <if expression="edadC&lt;=3">
+                <then>
+                    <output expression="&quot;Tu entrada es gratuita&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edadC&lt;=18">
+                        <then>
+                            <output expression="&quot;Debes pagar $200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edadC&gt;=19">
+                                <then>
+                                    <output expression="&quot;Debes pagar $500&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
