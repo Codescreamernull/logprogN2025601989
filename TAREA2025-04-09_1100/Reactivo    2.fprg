@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo    2"/>
+        <attribute name="authors" value="juani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 01:54:07 a. m."/>
+        <attribute name="created" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDQtMDg7MTE6MzI6NDAgcC4gbS47MzA2MQ=="/>
+        <attribute name="edited" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDQtMDk7MTI6MDI6MTkgYS4gbS47MTtqdWFuaTtMQVBUT1AtNkpRRFJPQTI7MjAyNS0wNC0wNDsxMTozMDoyNiBhLiBtLjtWZXJzaW9uLXBhcmEuZnByZzs4MDA1"/>
+        <attribute name="edited" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDQtMDk7MDE6NTQ6MDcgYS4gbS47MTszMTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="susecion" type="Integer" array="False" size=""/>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <declare name="separacion" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="1"/>
+            <assign variable="susecion" expression="1"/>
+            <assign variable="separacion" expression="1"/>
+            <while expression="numero&lt;=17000000000000">
+                <assign variable="susecion" expression="numero-susecion"/>
+                <assign variable="numero" expression="numero+susecion"/>
+                <output expression="&quot;Numero&quot;" newline="True"/>
+                <output expression="separacion" newline="True"/>
+                <assign variable="separacion" expression="separacion+1"/>
+                <output expression="&quot;=&quot;" newline="True"/>
+                <output expression="numero" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

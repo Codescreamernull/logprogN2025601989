@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo    1"/>
+        <attribute name="authors" value="juani"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 11:56:05 p. m."/>
+        <attribute name="created" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDQtMDc7MDU6NDc6MjggcC4gbS47MzA3NQ=="/>
+        <attribute name="edited" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDQtMDc7MDY6MTA6MTUgcC4gbS47MztqdWFuaTtMQVBUT1AtNkpRRFJPQTI7MjAyNS0wNC0wNDsxMTo1NjowNyBhLiBtLjtUcmFuc2Zvcm1hZG9yIGEgYmluYXJpby5mcHJnOzkwOTc="/>
+        <attribute name="edited" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDQtMDc7MDg6MDQ6MjIgcC4gbS47MTtqdWFuaTtMQVBUT1AtNkpRRFJPQTI7MjAyNS0wNC0wNDsxMToyMDo0OSBhLiBtLjt2ZXJzaW9uLW1pZW50cmFzLmZwcmc7ODUwMg=="/>
+        <attribute name="edited" value="anVhbmk7TEFQVE9QLTZKUURST0EyOzIwMjUtMDQtMDg7MTE6NTY6MDUgcC4gbS47MzszMTc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <declare name="resultado" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <assign variable="resultado" expression="1"/>
+            <assign variable="factorial" expression="1"/>
+            <output expression="&quot;Inserte un numero para obtener su factorial&quot;" newline="True"/>
+            <output expression="&quot;Nota: Al sacar factorial de (0) o (1) obtendras como resultado su mismo valor, tomando eso cuenta se aplicara la siguiente regla para este diagrama: numero 1 = factorial de 2, numero 2 = factorial de 3, numero 3 = factorial de 4, etc&quot;" newline="True"/>
+            <input variable="numero"/>
+            <while expression="factorial&lt;=numero">
+                <assign variable="factorial" expression="factorial+1"/>
+                <assign variable="resultado" expression="resultado*factorial"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
